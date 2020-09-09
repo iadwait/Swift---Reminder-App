@@ -93,6 +93,11 @@ extension RemindersListViewController: UITableViewDelegate,UITableViewDataSource
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableReminders.dequeueReusableCell(withIdentifier: "ReminderListViewCell") as! ReminderListViewCell
         cell.lblTitle.text = arrReminders[indexPath.row].name
+        let date = arrReminders[indexPath.row].date
+        let df = DateFormatter()
+        df.dateFormat = "dd-MMM-YYYY at hh:mm a"
+        cell.lblDate.text = df.string(from: date)
+        cell.selectionStyle = .none
         return cell
     }
     
