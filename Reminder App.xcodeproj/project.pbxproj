@@ -13,6 +13,7 @@
 		DEA6101425078FB2000BCCC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEA6101225078FB2000BCCC0 /* Main.storyboard */; };
 		DEA6101625078FB5000BCCC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEA6101525078FB5000BCCC0 /* Assets.xcassets */; };
 		DEA6101925078FB5000BCCC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEA6101725078FB5000BCCC0 /* LaunchScreen.storyboard */; };
+		DEF454682508905B00780EF8 /* ReminderDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF454672508905B00780EF8 /* ReminderDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		DEA6101525078FB5000BCCC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEA6101825078FB5000BCCC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DEA6101A25078FB5000BCCC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEF454672508905B00780EF8 /* ReminderDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,40 @@
 		DEA6100B25078FB2000BCCC0 /* Reminder App */ = {
 			isa = PBXGroup;
 			children = (
+				DEF454662508902A00780EF8 /* Model */,
+				DEF454652508902700780EF8 /* View */,
+				DEF454642508902400780EF8 /* Controller */,
 				DEA6100C25078FB2000BCCC0 /* AppDelegate.swift */,
 				DEA6100E25078FB2000BCCC0 /* SceneDelegate.swift */,
-				DEA6101025078FB2000BCCC0 /* ViewController.swift */,
-				DEA6101225078FB2000BCCC0 /* Main.storyboard */,
 				DEA6101525078FB5000BCCC0 /* Assets.xcassets */,
 				DEA6101725078FB5000BCCC0 /* LaunchScreen.storyboard */,
 				DEA6101A25078FB5000BCCC0 /* Info.plist */,
 			);
 			path = "Reminder App";
+			sourceTree = "<group>";
+		};
+		DEF454642508902400780EF8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DEA6101025078FB2000BCCC0 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DEF454652508902700780EF8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DEA6101225078FB2000BCCC0 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DEF454662508902A00780EF8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DEF454672508905B00780EF8 /* ReminderDataModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +168,7 @@
 				DEA6101125078FB2000BCCC0 /* ViewController.swift in Sources */,
 				DEA6100D25078FB2000BCCC0 /* AppDelegate.swift in Sources */,
 				DEA6100F25078FB2000BCCC0 /* SceneDelegate.swift in Sources */,
+				DEF454682508905B00780EF8 /* ReminderDataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
